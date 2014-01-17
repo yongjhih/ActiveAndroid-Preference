@@ -1,4 +1,4 @@
-package com.activeandroid.preference;
+package com.activeandroid;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
