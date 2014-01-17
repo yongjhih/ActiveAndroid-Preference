@@ -11,7 +11,7 @@ import android.content.SharedPreferences;
 
 import  com.activeandroid.model.Setting;
 
-final class Settings implements SharedPreferences {
+public class Settings implements SharedPreferences {
 
     public static class Maps {
         public static <K, V> HashMap<K, V> newHashMap() {
