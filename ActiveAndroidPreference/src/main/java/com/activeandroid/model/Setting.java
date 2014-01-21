@@ -53,27 +53,27 @@ public class Setting extends Model {
     }
 
     public Setting(String name, int value) {
-        this(name, "" + value);
+        this(name, toString(value));
     }
 
     public Setting(String name, long value) {
-        this(name, "" + value);
+        this(name, toString(value));
     }
 
     public Setting(String name, float value) {
-        this(name, "" + value);
+        this(name, toString(value));
     }
 
     public Setting(String name, double value) {
-        this(name, "" + value);
+        this(name, toString(value));
     }
 
     public Setting(String name, boolean value) {
-        this(name, "" + value);
+        this(name, toString(value));
     }
 
     public Setting(String name, Set<String> values) {
-        this(name, android.text.TextUtils.join(", ", new ArrayList<String>(values)));
+        this(name, toString(values));
     }
 
     /** @deprecated */
@@ -102,28 +102,52 @@ public class Setting extends Model {
         return s.value;
     }
 
+    public static String toString(int value) {
+        return toString("" + value); // FIXME
+    }
+
+    public static String toString(long value) {
+        return toString("" + value); // FIXME
+    }
+
+    public static String toString(float value) {
+        return toString("" + value); // FIXME
+    }
+
+    public static String toString(double value) {
+        return toString("" + value); // FIXME
+    }
+
+    public static String toString(boolean value) {
+        return toString("" + value); // FIXME
+    }
+
+    public static String toString(Set<String> values) {
+        return android.text.TextUtils.join(", ", new ArrayList<String>(values));
+    }
+
     public static Setting set(String name, int value) {
-        return set(name, "" + value); // FIXME
+        return set(name, toString(value));
     }
 
     public static Setting set(String name, long value) {
-        return set(name, "" + value); // FIXME
+        return set(name, toString(value));
     }
 
     public static Setting set(String name, float value) {
-        return set(name, "" + value); // FIXME
+        return set(name, toString(value));
     }
 
     public static Setting set(String name, double value) {
-        return set(name, "" + value); // FIXME
+        return set(name, toString(value));
     }
 
     public static Setting set(String name, boolean value) {
-        return set(name, "" + value); // FIXME
+        return set(name, toString(value));
     }
 
     public static Setting set(String name, Set<String> values) {
-        return set(name, android.text.TextUtils.join(", ", new ArrayList<String>(values)));
+        return set(name, toString(values));
     }
 
     /** @deprecated */
