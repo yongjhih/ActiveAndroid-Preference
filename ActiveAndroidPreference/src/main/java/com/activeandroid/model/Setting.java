@@ -103,23 +103,23 @@ public class Setting extends Model {
     }
 
     public static String toString(int value) {
-        return toString("" + value); // FIXME
+        return "" + value; // FIXME
     }
 
     public static String toString(long value) {
-        return toString("" + value); // FIXME
+        return "" + value; // FIXME
     }
 
     public static String toString(float value) {
-        return toString("" + value); // FIXME
+        return "" + value; // FIXME
     }
 
     public static String toString(double value) {
-        return toString("" + value); // FIXME
+        return "" + value; // FIXME
     }
 
     public static String toString(boolean value) {
-        return toString("" + value); // FIXME
+        return "" + value; // FIXME
     }
 
     public static String toString(Set<String> values) {
